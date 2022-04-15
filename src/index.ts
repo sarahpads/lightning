@@ -4,7 +4,6 @@ const startApp = async (): Promise<void> => {
   // create routes and such
   // await initialize();
   const app = new MyApp();
-  debugger
   document.body.appendChild(app.stage.getCanvas());
 };
 

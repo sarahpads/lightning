@@ -20,6 +20,7 @@ const config = {
   devServer: {
     open: true,
     host: '0.0.0.0',
+    static: path.resolve(__dirname, 'public')
   },
   plugins,
   module: {
