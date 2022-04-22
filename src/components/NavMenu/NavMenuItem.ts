@@ -7,7 +7,7 @@ export class NavMenuItem extends lightning.Component {
       h: 50,
       w: 50,
       rect: true,
-      color: Colors.grey3,
+      color: Colors.grey,
       Icon: {
         texture: {
           type: lightning.textures.ImageTexture,
@@ -18,10 +18,10 @@ export class NavMenuItem extends lightning.Component {
   }
 
   _focus() {
-    this.setSmooth('color', Colors.darkNeutralGray6)
+    this.setSmooth('color', Colors.yellow)
   }
 
   _unfocus() {
-    this.setSmooth('color', Colors.grey3)
+    this.setSmooth('color', Colors.grey)
   }
 }

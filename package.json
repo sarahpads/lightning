@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lightningjs/core": "^2.6.0"
+    "@lightningjs/core": "^2.6.0",
+    "@lightningjs/ui": "^1.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",

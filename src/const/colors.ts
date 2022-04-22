@@ -1,6 +1,8 @@
 export const enum Colors {
   transparent = 0x00000000,
-  darkNeutralGray2 = 0xff161920,
-  darkNeutralGray6 = 0xffe2e3e3,
-  grey3 = 0xff484b4f
+  grey = 0xff484b4f,
+  yellow = 0xfffed20a,
+  green = 0xffaaea69,
+  pink = 0xffec74ac,
+  white = 0xffffffff
 }

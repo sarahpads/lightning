@@ -1,5 +1,6 @@
 import lightning from '@lightningjs/core'
 import { NavMenu } from './components/NavMenu/NavMenu';
+import { Colors } from './const/colors';
 import { getKey, KeyCode } from './const/keycode'
 import { Landing } from './screens/Landing/Landing';
 
@@ -11,7 +12,9 @@ class MyApp extends lightning.Application {
       Main: {
         type: Landing,
         x: 0,
-        y: 0
+        y: 0,
+        w: (w: number) => w,
+        h: (h: number) => h,
       },
       NavMenu: {
         type: NavMenu,
@@ -21,7 +24,7 @@ class MyApp extends lightning.Application {
       },
       Splash: {
         rect: true,
-        color: 0xff616161,
+        color: Colors.pink,
         visible: false,
         w: (w: number) => w,
         h: (h: number) => h
@@ -47,17 +50,14 @@ class MyApp extends lightning.Application {
       });
 
       fadeOut.start()
-    }, 5000)
+    }, 1000)
   }
 
   _handleKey(event: KeyboardEvent) {
     switch (getKey(event)) {
-      case KeyCode.KEY_RIGHT:
-        this._sideMenuOpen = false
+      case KeyCode.KEY_F1:
+        this._sideMenuOpen = !this._sideMenuOpen
         break
-
-      case KeyCode.KEY_LEFT:
-        this._sideMenuOpen = true
 
       default:
         return false
